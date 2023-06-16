@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Bruno Ace SC', cursive;
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(
+        to right bottom,
+        #0f0283,
+        #6555f2
+    );
+}
+
+.main-container {
+    height: 80vh;
+    width: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 4px;
+    align-items: center;
+    background: white;
+    box-shadow: .2rem .2rem 2rem rgba(0, 0, 0, 0.3);
+}
+
+.main-heading {
+    color: transparent;
+    background-clip: text;
+    background-image: linear-gradient(
+        to right,
+        #0e0470,
+        #5949ef
+    );
+    margin-bottom: 2rem;
+}
+
+h3 {
+    color: rgb(61, 59, 59);
+    font-size: 1rem;
+}
+
+input:not([type="submit"]) {
+    margin-bottom: 1.5rem;
+    padding: .8rem 1.5rem;
+    outline: none;
+    border-style: none;
+    border-radius: 3px;
+    box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.3);
+    font-size: 1rem;
+    color: rgb(61, 59, 59);
+    box-sizing: border-box;
+    
+    
+}
+input:not([type="submit"]):focus{ 
+    border: 3px solid #E86A33;
+
+}
+
+input[type="submit"] {
+    display: block;
+    margin: 0 auto;
+    font-size: .9rem;
+    background-color: #220cea;
+    border-style: none;
+    border-radius: 3px;
+    width: 15rem;
+    height: 2.2rem;
+    color: white;
+    cursor: pointer;
+    margin-top: 1.5rem;
+}
+
+.agreement {
+    margin: 2rem 3rem;
+}
+
+.agreement a {
+    text-decoration: none;
+    color: #E86A33;
+}
+
+/* ----Handling responsiveness----*/
+
+@media (max-width:45rem) {
+    .main-container {
+        width: 32rem;
+    }
+}
+
+@media (max-width:34rem) {
+    .main-container {
+        width: 24rem;
+        height: 85vh;
+    }
+    .main-heading {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width:27rem) {
+    .main-container {
+        width: 22rem;
+        height: 85vh;
+    }
+    .main-heading {
+        font-size: 1.3rem;
+    }
+    input[type="submit"] {
+        margin-top: 1rem;
+    }
+    .agreement {
+        margin: 1rem 2rem;
+    }
+}
+
+@media (max-width:24rem){
+    .main-container {
+        width: 20rem;
+        height: 85vh;
+    } 
+    .agreement {
+        font-size: 1rem;
+    }
+
+}
+
+@media (max-height:35.5rem){
+
+    .main-heading {
+        margin-bottom: 1.5rem;
+    }
+
+    .main-container {
+        width: 18rem;
+        height: 90vh;
+    }
+    input:not([type="submit"]) {
+        margin-bottom: 1rem;
+    }
+    .agreement {
+        font-size: .8rem;
+    }
+
+}
